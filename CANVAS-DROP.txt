@@ -1,0 +1,177 @@
+═══════════════════════════════════════════════════════════════════════════
+  SFS THEME - CANVAS DROP (Copy this entire file to Replit Canvas)
+═══════════════════════════════════════════════════════════════════════════
+
+APPLY SMARTFLOW SYSTEMS COMPLETE THEME
+
+Package: /home/garet/SFS-THEME-MASTER-PACKAGE/
+
+═══════════════════════════════════════════════════════════════════════════
+AUTOMATED SETUP (DO THIS):
+═══════════════════════════════════════════════════════════════════════════
+
+bash /home/garet/SFS-THEME-MASTER-PACKAGE/SETUP.sh
+
+That's it! Everything installs automatically.
+
+═══════════════════════════════════════════════════════════════════════════
+THEME SPECIFICATIONS:
+═══════════════════════════════════════════════════════════════════════════
+
+COLORS:
+  Background:  #0D0D0D  (deep black)
+  Panel:       #3B2F2F  (brown tint)
+  Gold:        #FFD700  (primary accent)
+  Text:        #F5F5DC  (beige/parchment)
+  Muted:       #9a8f80  (subtle text)
+
+GLASS CARDS:
+  background: rgba(59, 47, 47, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+BUTTONS:
+  .btn-gold:
+    background: linear-gradient(135deg, #FFD700, #ffdd00);
+    color: #1a1600;
+    border-radius: 999px;
+    padding: 0.75rem 1.5rem;
+
+  .btn-gold:hover:
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.8);
+
+LOGO (Top Left):
+  Position: fixed, top: 15px, left: 15px
+  Size: 56px × 56px
+  Border: 2px solid rgba(255, 215, 0, 0.4)
+  Border-radius: 12px
+  Hover: Gold glow + translateY(-2px)
+
+═══════════════════════════════════════════════════════════════════════════
+REQUIRED HTML STRUCTURE:
+═══════════════════════════════════════════════════════════════════════════
+
+<head>
+  <link rel="stylesheet" href="sfs-complete-theme.css"/>
+  <link rel="icon" href="assets/favicon.ico"/>
+</head>
+<body>
+  <!-- Circuit background -->
+  <canvas id="circuit-canvas"></canvas>
+
+  <!-- Logo top left -->
+  <a href="/" class="sfs-fixed-logo">
+    <img src="assets/sfs-logo-square-128.png" alt="SmartFlow Systems" />
+  </a>
+
+  <!-- Your content -->
+  <div class="container">
+    <h1 class="text-gold-gradient">App Name</h1>
+    <div class="glass-card">
+      <p>Your content</p>
+      <button class="btn btn-gold">Primary</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="sfs-circuit-flow.js"></script>
+  <script src="sfs-hamburger-menu.js"></script>
+</body>
+
+═══════════════════════════════════════════════════════════════════════════
+COMPONENT CLASSES:
+═══════════════════════════════════════════════════════════════════════════
+
+CARDS:
+  .glass-card          Standard glass with blur
+  .sfs-glass-card      Brown-tinted glass
+  .sfs-flow-card       Enhanced marble
+
+BUTTONS:
+  .btn .btn-gold       Gold gradient primary
+  .btn .btn-ghost      Transparent secondary
+
+TEXT:
+  .text-gold-gradient  Shimmering gold text
+  .text-gold           Solid gold text
+
+LAYOUT:
+  .container           Centered max-width 1280px
+  .section             Standard padding
+
+═══════════════════════════════════════════════════════════════════════════
+VERIFICATION (Check all after setup):
+═══════════════════════════════════════════════════════════════════════════
+
+☐ Background is deep black (#0D0D0D)
+☐ Circuit flow animation visible and running
+☐ SFS logo in top left with gold border
+☐ Logo glows gold on hover
+☐ Hamburger menu (below logo) slides from left
+☐ Cards have glass blur effect
+☐ All accents are gold (#FFD700)
+☐ Buttons have gold gradient
+☐ Button hover: lift + glow
+☐ Text is beige color (#F5F5DC)
+
+═══════════════════════════════════════════════════════════════════════════
+EFFECTS INCLUDED:
+═══════════════════════════════════════════════════════════════════════════
+
+✓ Circuit flow background (35 animated gold nodes)
+✓ Glass morphism cards with blur
+✓ Marble effect on panels
+✓ Gold shimmer animations
+✓ Smooth hover transitions
+✓ Hamburger navigation menu
+✓ Fixed logo with glow
+✓ Responsive breakpoints
+✓ Gold accent borders everywhere
+
+═══════════════════════════════════════════════════════════════════════════
+FILES COPIED BY SETUP SCRIPT:
+═══════════════════════════════════════════════════════════════════════════
+
+CSS:  sfs-complete-theme.css
+JS:   sfs-circuit-flow.js, sfs-hamburger-menu.js
+LOGO: sfs-logo-square-128.png (+ 32, 64, 256px variants)
+ICON: favicon.ico, app-icon-192.png
+
+═══════════════════════════════════════════════════════════════════════════
+IMPORTANT NOTES:
+═══════════════════════════════════════════════════════════════════════════
+
+• Use #FFD700 for ALL gold accents, borders, highlights
+• Glass cards need backdrop-filter AND -webkit-backdrop-filter
+• Logo must be exactly 56×56px in top left at (15px, 15px)
+• Hamburger menu auto-generates navigation sections
+• Circuit canvas MUST have id="circuit-canvas"
+• All interactive elements need smooth transitions
+• Gold gradient buttons use linear-gradient(135deg, #FFD700, #ffdd00)
+• Text should be #F5F5DC (beige/parchment) on dark backgrounds
+
+═══════════════════════════════════════════════════════════════════════════
+MANUAL SETUP (If script fails):
+═══════════════════════════════════════════════════════════════════════════
+
+1. Copy files:
+   cp /home/garet/SFS-THEME-MASTER-PACKAGE/css/sfs-complete-theme.css ./
+   cp /home/garet/SFS-THEME-MASTER-PACKAGE/js/sfs-circuit-flow.js ./
+   cp /home/garet/SFS-THEME-MASTER-PACKAGE/js/sfs-hamburger-menu.js ./
+   cp -r /home/garet/SFS-THEME-MASTER-PACKAGE/assets ./
+
+2. Link in HTML (see structure above)
+
+3. Add logo CSS to styles.css (see REPLIT-AGENT-INSTRUCTIONS.md)
+
+═══════════════════════════════════════════════════════════════════════════
+
+PACKAGE LOCATION: /home/garet/SFS-THEME-MASTER-PACKAGE/
+VERSION: 2.0.0
+LAST UPDATED: 2025-11-30
+
+═══════════════════════════════════════════════════════════════════════════
